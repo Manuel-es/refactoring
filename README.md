@@ -13,3 +13,14 @@
 secreta que el usuario tendrá que acertar. En cada intento se muestra como pista, para cada dígito de la combinación introducido por el jugador, si es mayor, menor o igual que el correspondiente en la combinación secreta.
 
 5- Leer una serie de n enteros que se almacenarán en una tabla que hay que ordenar y mostrar. Leer otra serie de m enteros, que también se guardarán en una tabla y se mostrarán ordenados. A continuación, fusionar las dos tablas en una tercera, de forma que los n+m números sigan ordenados, mostrar primero ascendentemente y luego descendentemente.
+
+ejercicios 2 
+Variables redundantes:
+Definición de cada vocal (v1, v2, ..., v5) de forma innecesaria antes de crear el array vocales.
+Condicionales largos:
+Uso de if-else en lugar de un switch, lo que genera un código más extenso.
+Nombres genéricos y poco claros:
+Uso de nombres como f para frecuencias y tabla para las vocales aleatorias.
+Impresión menos optimizada:
+Evitar funciones compactas como Arrays.toString() para imprimir los arrays.
+Este código, aunque funcional, es menos legible y más propenso a errores en caso de cambios futuros.
