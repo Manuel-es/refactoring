@@ -1,6 +1,11 @@
 1-  Implementar un programa que lea 5 números por teclado, los copie a otro array multiplicados por 2 y los muestre todos ordenados usando un tercer array.
 
 2- Se creará un programa que genere una tabla de caracteres de 20 elementos cargado con vocales de manera aleatoria. Contar e imprimir el número de veces que aparece cada vocal.
+## Modificado por Robert Esquerre: 
+- Cambio de nombre de la variable frecuencia
+- Cada vocal pasa a ser una constante ya que no se debe modificar
+- Cambio de if else por switch con cada vocal para cada frecuencia
+- Bucles for con variable i para facilitar la lectura
 
 3- Diseñar un programa que solicite al usuario que introduzca por teclado 5 números decimales a continuación, debe mostrar los números en el mismo orden que se han introducido
 
