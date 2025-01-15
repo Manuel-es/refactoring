@@ -1,5 +1,11 @@
 1-  Implementar un programa que lea 5 números por teclado, los copie a otro array multiplicados por 2 y los muestre todos ordenados usando un tercer array.
 
+COMENTARIO SILVIA:
+- Uso de un arreglo ( int[] numeros): Permite almacenar los números de manera más estructurada, eliminando la necesidad de variables separadas ( a, b, c, etc.).
+- Multiplicación al momento de leer: Se multiplica cada número por 2 directamente al ingresarlo, reduciendo líneas innecesarias.
+- Ordenación con Arrays.sort: Sustituye la larga secuencia de intercambios manuales por un método optimizado y confiable.
+- Bucles para leer e imprimir: El uso de bucles simplifica la lógica, reduciendo la repetición de código.
+
 2- Se creará un programa que genere una tabla de caracteres de 20 elementos cargado con vocales de manera aleatoria. Contar e imprimir el número de veces que aparece cada vocal.
 
 3- Diseñar un programa que solicite al usuario que introduzca por teclado 5 números decimales a continuación, debe mostrar los números en el mismo orden que se han introducido

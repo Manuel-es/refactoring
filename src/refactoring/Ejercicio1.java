@@ -1,88 +1,27 @@
 package refactoring;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Ejercicio1 {
 
 	public static void main(String[] args) {
+		var sc = new Scanner(System.in);
 
-		Scanner sc = new Scanner(System.in);
+		int[] numeros = new int[5];
 
-		int a, b, c, d, e;
-		System.out.println("Ingresa 5 números:");
-		System.out.print("Número 1: ");
-		a = sc.nextInt();
-		System.out.print("Número 2: ");
-		b = sc.nextInt();
-		System.out.print("Número 3: ");
-		c = sc.nextInt();
-		System.out.print("Número 4: ");
-		d = sc.nextInt();
-		System.out.print("Número 5: ");
-		e = sc.nextInt();
+        System.out.println("Ingresa 5 números:");
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Número " + (i + 1) + ": ");
+            numeros[i] = sc.nextInt() * 2;
+        }
 
-		int f = a * 2, g = b * 2, h = c * 2, i = d * 2, j = e * 2;
+        Arrays.sort(numeros);
 
-		int temp;
-		if (f > g) {
-			temp = f;
-			f = g;
-			g = temp;
-		}
-		if (g > h) {
-			temp = g;
-			g = h;
-			h = temp;
-		}
-		if (h > i) {
-			temp = h;
-			h = i;
-			i = temp;
-		}
-		if (i > j) {
-			temp = i;
-			i = j;
-			j = temp;
-		}
-		if (f > g) {
-			temp = f;
-			f = g;
-			g = temp;
-		}
-		if (g > h) {
-			temp = g;
-			g = h;
-			h = temp;
-		}
-		if (h > i) {
-			temp = h;
-			h = i;
-			i = temp;
-		}
-		if (f > g) {
-			temp = f;
-			f = g;
-			g = temp;
-		}
-		if (g > h) {
-			temp = g;
-			g = h;
-			h = temp;
-		}
-		if (f > g) {
-			temp = f;
-			f = g;
-			g = temp;
-		}
+        System.out.println("\nLos números multiplicados por 2 y ordenados son:");
+        for (int numero : numeros) {
+            System.out.println(numero);
+        }
 
-		System.out.println("\nLos números multiplicados por 2 y ordenados son:");
-		System.out.println(f);
-		System.out.println(g);
-		System.out.println(h);
-		System.out.println(i);
-		System.out.println(j);
-
-		sc.close();
+        sc.close();
 	}
-
 }
